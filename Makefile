@@ -10,3 +10,9 @@ watch: node_modules
 node_modules: package.json
 	@$(NPM) install -qs
 
+clean:
+	rm -rf assets/bundle
+
+dist-clean: clean
+	rm -rf node_modules
+
