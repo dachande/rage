@@ -1,0 +1,22 @@
+
+/**
+ * Rage Template
+ */
+
+/**
+ * Importa
+ *
+ * This file should only contain imports.
+ * Respect the order. only change it, if you have to.
+ */
+
+/* Vars and basics should be the first imports */
+@import "vars.css";
+@import "normalize.css";
+@import "bootstrap/dist/css/bootstrap.css";
+@import "bootstrap/dist/css/bootstrap-theme.css";
+@import "basics.css";
+
+/**
+ * List of global modules
+ */
