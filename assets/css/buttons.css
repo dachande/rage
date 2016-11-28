@@ -3,8 +3,9 @@
  */
 
 .Button {
+  @apply --fs-button;
+
   font-family: var(--font-hl);
-  font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--white);

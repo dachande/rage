@@ -12,7 +12,12 @@ body {
   background-color: var(--white);
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
+  @apply --fs1;
 }
 
 .container {

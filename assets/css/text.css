@@ -3,6 +3,8 @@
  */
 
 .Text {
+  @apply --fs-text;
+
   margin: 32px 0;
 
   text-align: center;
@@ -10,7 +12,6 @@
   color: var(--dark-gray);
 
   font-family: var(--font-copy);
-  line-height: 31px;
 }
 
 .Text--Left {
