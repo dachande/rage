@@ -23,3 +23,13 @@
   color: var(--white);
   background-color: var(--red);
 }
+
+.Button--White {
+  border: 2px solid var(--white);
+  background-color: transparent;
+}
+
+.Button--White:hover {
+  color: var(--dark-gray);
+  background-color: var(--white);
+}
