@@ -3,19 +3,23 @@
  */
 
 .Button {
-  @apply --fs-button;
+  display: inline-block;
 
-  font-family: var(--font-hl);
-  text-transform: uppercase;
+  padding: 16px 20px;
+
   text-decoration: none;
+  text-transform: uppercase;
+
   color: var(--white);
   background-color: var(--dark-red);
-  display: inline-block;
-  padding: 16px 20px;
+
+  font-family: var(--font-hl);
+  @apply --fs-button;
 }
 
 .Button:hover {
   text-decoration: none;
+
   color: var(--white);
   background-color: var(--red);
 }
