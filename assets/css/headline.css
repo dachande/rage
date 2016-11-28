@@ -1,0 +1,52 @@
+
+/**
+ * Headlines
+ */
+
+.Headline {
+  position: relative;
+
+  margin: 0 0 65px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--dark-gray);
+
+  font-family: var(--font-hl);
+  font-size: 35px;
+  line-height: 26px;
+}
+
+.Headline--Left {
+  text-align: left;
+}
+
+.Headline--Right {
+  text-align: right;
+}
+
+.Headline--Underline:after {
+  position: absolute;
+  top: 0;
+  bottom: -36px;
+  left: 50%;
+
+  width: 83px;
+
+  content: " ";
+  transform: translateX(-50%);
+
+  border-bottom: 2px solid var(--dark-red);
+}
+.Headline--Left.Headline--Underline:after {
+  left: 0;
+
+  transform: none;
+}
+.Headline--Right.Headline--Underline:after {
+  right: 0;
+  left: auto;
+
+  transform: none;
+}

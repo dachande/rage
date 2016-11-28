@@ -15,8 +15,11 @@
 @import "normalize.css";
 @import "bootstrap/dist/css/bootstrap.css";
 @import "bootstrap/dist/css/bootstrap-theme.css";
+@import "fonts.css";
 @import "basics.css";
 
 /**
  * List of global modules
  */
+@import "headline.css";
+@import "text.css";

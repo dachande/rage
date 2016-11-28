@@ -1,0 +1,22 @@
+/**
+ * Text formatting
+ */
+
+.Text {
+  margin: 31px 0;
+
+  text-align: center;
+
+  color: var(--dark-gray);
+
+  font-family: var(--font-copy);
+  line-height: 31px;
+}
+
+.Text--Left {
+  text-align: left;
+}
+
+.Text--Right {
+  text-align: right;
+}
