@@ -1,0 +1,20 @@
+/**
+ * Button styles
+ */
+
+.Button {
+  font-family: var(--font-hl);
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--dark-red);
+  display: inline-block;
+  padding: 16px 20px;
+}
+
+.Button:hover {
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--red);
+}
