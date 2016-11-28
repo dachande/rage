@@ -8,4 +8,4 @@ Just clone this repository, make sure you have the latest version of Node JS ins
 
 ## Status
 
-This project is still at its earliest development phase. There is nothing to see here yet.
+This project is still at its earliest development phase. There is not much to see here yet.
