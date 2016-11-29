@@ -2,7 +2,8 @@
  * Button styles
  */
 
-.Button {
+.Button,
+.Button:focus {
   display: inline-block;
 
   padding: 1rem 1.25rem;
@@ -15,21 +16,25 @@
 
   font-family: var(--font-hl);
   @apply --fs-button;
+  @apply --animate;
 }
 
-.Button:hover {
+.Button:hover,
+.Button:active {
   text-decoration: none;
 
   color: var(--white);
   background-color: var(--red);
 }
 
-.Button--White {
+.Button--White,
+.Button--White:focus {
   border: 2px solid var(--white);
   background-color: transparent;
 }
 
-.Button--White:hover {
+.Button--White:hover,
+.Button--White:active {
   color: var(--dark-gray);
   background-color: var(--white);
 }
