@@ -25,6 +25,11 @@
     line-height: 1.5;
   }
 
+  --fs-hl {
+    font-size: 2.1875rem;
+    line-height: 1.625rem;
+  }
+
   --fs-text {
     font-size: .875rem;
     line-height: 2rem;

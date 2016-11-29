@@ -6,7 +6,7 @@
 .Headline {
   position: relative;
 
-  margin: 0 0 65px;
+  margin: 0 0 4.0625rem;
 
   text-align: center;
   text-transform: uppercase;
@@ -14,8 +14,7 @@
   color: var(--dark-gray);
 
   font-family: var(--font-hl);
-  font-size: 35px;
-  line-height: 26px;
+  @apply --fs-hl;
 }
 
 .Headline--Left {
@@ -29,10 +28,10 @@
 .Headline--Underline:after {
   position: absolute;
   top: 0;
-  bottom: -36px;
+  bottom: -2.25rem;
   left: 50%;
 
-  width: 83px;
+  width: 5.1875rem;
 
   content: " ";
   transform: translateX(-50%);
