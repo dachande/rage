@@ -12,7 +12,6 @@
 
 /* Vars and basics should be the first imports */
 @import "vars.css";
-@import "normalize.css";
 @import "bootstrap/dist/css/bootstrap.css";
 @import "bootstrap/dist/css/bootstrap-theme.css";
 @import "fonts.css";
