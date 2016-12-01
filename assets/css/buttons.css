@@ -29,7 +29,7 @@
 
 .Button--White,
 .Button--White:focus {
-  border: 2px solid var(--white);
+  border: 0.125rem solid var(--white);
   background-color: transparent;
 }
 

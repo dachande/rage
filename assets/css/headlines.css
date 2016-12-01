@@ -36,7 +36,7 @@
   content: " ";
   transform: translateX(-50%);
 
-  border-bottom: 2px solid var(--dark-red);
+  border-bottom: 0.125rem solid var(--dark-red);
 }
 .Headline--Left.Headline--Underline:after {
   left: 0;
