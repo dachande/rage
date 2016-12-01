@@ -25,6 +25,17 @@
   text-align: right;
 }
 
+.Headline--Small {
+  margin-bottom: 2.5rem;
+  @apply --fs-hl-small;
+}
+
+
+/**
+ * Headline with image (left) will have:
+ * margin-bottom: 3.375rem;
+ */
+
 .Headline--Underline:after {
   position: absolute;
   top: 0;
@@ -48,4 +59,10 @@
   left: auto;
 
   transform: none;
+}
+
+.Headline--Small.Headline--Underline:after {
+  bottom: -1.5rem;
+
+  width: 1.875rem;
 }

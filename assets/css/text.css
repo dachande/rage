@@ -20,3 +20,7 @@
 .Text--Right {
   text-align: right;
 }
+
+.Text--Justify {
+  text-align: justify;
+}
