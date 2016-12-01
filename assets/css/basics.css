@@ -21,5 +21,23 @@ body {
 }
 
 .container {
-  /*box-sizing: content-box;*/
+  position: relative;
+}
+
+.container-border:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  width: 100vw;
+  height: 1px;
+
+  transform: translateX(-50%);
+
+  border-bottom: 1px solid var(--superlight-gray);
+}
+
+.col {
+  margin-top: 6.5625rem;
+  margin-bottom: 6.5625rem;
 }

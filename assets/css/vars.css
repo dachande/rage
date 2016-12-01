@@ -10,6 +10,7 @@
   --white: #ffffff;
   --dark-gray: #333333;
   --gray: #767676;
+  --superlight-gray: #eeeeee;
   --light-gray: #bababa;
   --dark-red: #ff6863;
   --red: #fc9996;
@@ -23,25 +24,25 @@
   --fs1 {
     font-size: 1rem;
     line-height: 1.5;
-  }
+  };
 
   --fs-hl {
     font-size: 2.1875rem;
     line-height: 1.625rem;
-  }
+  };
 
   --fs-text {
     font-size: .875rem;
     line-height: 2rem;
-  }
+  };
 
   --fs-button {
     font-size: .875rem;
     line-height: 1.25rem;
-  }
+  };
 
   /* Transitions */
   --animate {
     transition: all 0.25s ease;
-  }
+  };
 }
