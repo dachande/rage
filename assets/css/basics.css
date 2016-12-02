@@ -41,3 +41,11 @@ body {
   margin-top: 6.5625rem;
   margin-bottom: 6.5625rem;
 }
+
+.col-collapse-top {
+  margin-top: 0;
+}
+
+.col-collapse-bottom {
+  margin-bottom: 0;
+}

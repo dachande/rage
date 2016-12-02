@@ -6,7 +6,7 @@
 .Headline {
   position: relative;
 
-  margin: 0 0 4.0625rem;
+  margin: 0 0 4.125rem;
 
   text-align: center;
   text-transform: uppercase;
@@ -39,7 +39,7 @@
 .Headline--Underline:after {
   position: absolute;
   top: 0;
-  bottom: -2.25rem;
+  bottom: -2.375rem;
   left: 50%;
 
   width: 5.1875rem;
@@ -65,4 +65,38 @@
   bottom: -1.5rem;
 
   width: 1.875rem;
+}
+
+.Headline--Icon {
+  position: relative;
+
+  text-align: left;
+}
+
+.Headline--Icon:before {
+  position: absolute;
+  top: -3.875rem;
+  right: 0;
+  left: 0;
+
+  height: 2.25rem;
+
+  content: " ";
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;;
+}
+
+.Headline--Icon.Headline--Icon-Lightbulb:before {
+  background-image: url(/assets/img/lightbulb.svg);
+  background-position: -.375rem 0;
+}
+
+.Headline--Icon.Headline--Icon-Monitor:before {
+  background-image: url(/assets/img/monitor.svg);
+}
+
+.Headline--Icon.Headline--Icon-Camera:before {
+  background-image: url(/assets/img/camera.svg);
 }

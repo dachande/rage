@@ -27,13 +27,15 @@
   };
 
   --fs-hl {
-    font-size: 2.1875rem;
-    line-height: 1.625rem;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    letter-spacing: .1875rem;
   };
 
   --fs-hl-small {
     font-size: .875rem;
     line-height: .5rem;
+    letter-spacing: .0625rem;
   };
 
   --fs-text {
