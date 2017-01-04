@@ -49,11 +49,13 @@
 
   border-bottom: 0.125rem solid var(--dark-red);
 }
+
 .Headline--Left.Headline--Underline:after {
   left: 0;
 
   transform: none;
 }
+
 .Headline--Right.Headline--Underline:after {
   right: 0;
   left: auto;
@@ -85,7 +87,7 @@
 
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: contain;;
+  background-size: contain;
 }
 
 .Headline--Icon.Headline--Icon-Lightbulb:before {
