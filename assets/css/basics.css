@@ -20,6 +20,10 @@ body {
   @apply --fs1;
 }
 
+.Block--gray {
+  background-color: var(--supersuperlight-gray);
+}
+
 .container {
   position: relative;
 }
