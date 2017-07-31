@@ -30,6 +30,10 @@
   @apply --fs-hl-small;
 }
 
+.Headline--Progress {
+  margin-bottom: 1.5625rem;
+  @apply --fs-hl-small;
+}
 
 /**
  * Headline with image (left) will have:
