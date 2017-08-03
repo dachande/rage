@@ -41,3 +41,15 @@
   background-color: var(--superlight-gray);
   transform: rotate(0deg);
 }
+
+.panel-body {
+  padding: 12px 26px;
+}
+
+.panel-body .Text {
+  margin: 0;
+}
+
+.panel-body .Text + .Text {
+  margin-top: 1rem;
+}
