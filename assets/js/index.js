@@ -1,6 +1,7 @@
 
 global.$ = global.jQuery = require('jquery')
 var bootstrap = require('bootstrap')
+var slick = require('slick-carousel')
 
 $(document).ready(function () {
   var $videoModal = $('.Video__Modal')
@@ -24,4 +25,11 @@ $(document).ready(function () {
       $modal = $(this)
       $modal.find('iframe').attr('src', '')
     })
+
+  $('.Slideshow').slick({
+    dots: false,
+    infinite: true,
+    centerMode: true,
+    arrows: false
+  })
 })
