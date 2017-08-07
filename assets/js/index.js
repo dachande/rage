@@ -3,7 +3,7 @@ global.$ = global.jQuery = require('jquery')
 var bootstrap = require('bootstrap')
 
 $(document).ready(function () {
-  var $videoModal = $('.video-modal')
+  var $videoModal = $('.Video__Modal')
 
   $videoModal
     .each(function (e) {
