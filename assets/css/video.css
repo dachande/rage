@@ -1,0 +1,51 @@
+
+/**
+ * Video
+ */
+
+.Video {
+  position: relative;
+  height: 461px;
+  background-color: var(--dark-gray);
+  background-size: cover;
+  background-position: 50%;
+}
+
+.Video__Link {
+  display: block;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
+  text-indent: -10000px;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+
+  @apply --animate;
+}
+
+.Video__Link:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-30%) translateY(-50%);
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 30px solid var(--white);
+
+  @apply --animate;
+}
+
+.Video__Link:hover {
+  border-color: var(--superlight-gray);
+}
+
+.Video__Link:hover:after {
+  border-left-color: var(--superlight-gray);
+}
