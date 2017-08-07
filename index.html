@@ -123,7 +123,8 @@
       <div class="row">
         <div class="col col-collapse-top col-collapse-bottom">
           <div class="Video" style="background-image: url(/assets/img/video.jpg);">
-            <a href="#" class="Video__Link">Play video</a>
+            <div class="Video__Overlay"></div>
+            <a class="Video__Link" data-toggle="modal" data-target="#videoModal">Play video</a>
           </div>
         </div>
       </div>
@@ -253,6 +254,23 @@
         </div>
       </div>
     </section>
+
+    <div id="videoModal" class="modal fade Video__Modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">×</span><span class="sr-only">Close</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="Video__Container Video__Container--Responsive Video__Container--Responsive-16by9">
+              <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/Pft7voW5ui8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="assets/bundle/bundle.js"></script>
   </body>

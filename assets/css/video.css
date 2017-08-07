@@ -11,6 +11,14 @@
   background-position: 50%;
 }
 
+.Video__Overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--black-trans-30);
+}
 .Video__Link {
   display: block;
   position: absolute;
@@ -43,9 +51,59 @@
 }
 
 .Video__Link:hover {
-  border-color: var(--superlight-gray);
+  border-color: var(--dark-red);
 }
 
 .Video__Link:hover:after {
-  border-left-color: var(--superlight-gray);
+  border-left-color: var(--dark-red);
+}
+
+.Video__Container--Responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.Video__Container--Responsive iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.Video__Container--Responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+
+.Video__Modal .modal-content {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.Video__Modal .modal-header {
+  border: 0;
+  padding: 25px 25px 15px;
+  text-align: right;
+}
+
+.Video__Modal .modal-header .close {
+  float: none;
+  margin: 0;
+  font-size: 36px;
+  color: var(--white);
+  font-weight: 300;
+  text-shadow: none;
+  opacity: 1;
+  outline: none;
+}
+
+.Video__Modal .modal-body {
+  padding: 0 25px 25px;
 }
