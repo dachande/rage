@@ -22,7 +22,7 @@ $(document).ready(function () {
    * Slideshow images will open in a magnific popup layer
    */
   $('.Slideshow').magnificPopup({
-    delegate: 'a',
+    delegate: '.Slideshow__Slide:not(.slick-cloned) a',
     type: 'image',
     mainClass: 'mfp-with-zoom',
 
