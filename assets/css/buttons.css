@@ -4,9 +4,7 @@
 
 .Button,
 .Button:focus {
-  display: inline-block;
-
-  padding: 1rem 1.25rem;
+  padding: .875rem 1.25rem;
 
   text-decoration: none;
   text-transform: uppercase;
@@ -14,9 +12,35 @@
   color: var(--white);
   background-color: var(--dark-red);
 
+  border: 0.125rem solid var(--dark-red);
+
   font-family: var(--font-hl);
   @apply --fs-button;
   @apply --animate;
+}
+
+.Button {
+  display: block;
+  float: left;
+  clear: left;
+
+}
+
+.Button + .Button {
+  margin-top: 1.625rem;
+}
+
+@media (min-width: 481px) {
+  .Button {
+    display: inline-block;
+    float: none;
+    clear: none;
+  }
+
+  .Button + .Button {
+    margin-top: 0;
+    margin-left: 1.625rem;
+  }
 }
 
 .Button:hover,
@@ -25,6 +49,7 @@
 
   color: var(--white);
   background-color: var(--red);
+  border-color: var(--red);
 }
 
 .Button--White,
@@ -37,4 +62,5 @@
 .Button--White:active {
   color: var(--dark-gray);
   background-color: var(--white);
+  border-color: var(--white);
 }
