@@ -22,6 +22,7 @@
 /**
  * List of global modules
  */
+@import "header.css";
 @import "headlines.css";
 @import "text.css";
 @import "buttons.css";
