@@ -19,7 +19,7 @@
 }
 
 .panel-headline {
-  margin: 1.625rem 5.125rem;
+  margin: 1.625rem 1.625rem 1.625rem 5.125rem;
   text-transform: uppercase;
   @apply --fs-hl-small;
 }
