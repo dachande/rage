@@ -22,6 +22,20 @@ body {
   @apply --fs1;
 }
 
+/* Remove outline from elements that were outlined by bootstrap */
+a:focus,
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+}
+
 .Block--gray {
   background-color: var(--supersuperlight-gray);
 }
