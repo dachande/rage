@@ -28,8 +28,11 @@ $(document).ready(function () {
 
   $('.Slideshow').slick({
     dots: false,
+    arrows: true,
     infinite: true,
     centerMode: true,
-    arrows: false
+    variableWidth: true,
+    swipeToSlide: true,
+    focusOnSelect: true
   })
 })

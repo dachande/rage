@@ -17,6 +17,8 @@ html {
 }
 
 body {
+  overflow-x: hidden;
+
   @apply --fs1;
 }
 
