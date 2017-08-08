@@ -15,8 +15,7 @@ $(document).ready(function () {
     centerMode: true,
     variableWidth: true,
     swipeToSlide: true,
-    focusOnSelect: true,
-    lazyLoad: 'ondemand'
+    focusOnSelect: true
   })
 
   /**
