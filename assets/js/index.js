@@ -37,6 +37,39 @@ $(document).ready(function () {
 
     gallery: {
       enabled: true
+    },
+
+    callbacks: {
+      beforeOpen: function () {
+        this.lastIndex = this.index
+        $('.Slideshow').slick('slickSetOption', {
+          speed: 100
+        })
+      },
+      beforeClose: function () {
+        $('.Slideshow').slick('slickSetOption', {
+          speed: 300
+        })
+      },
+      change: function () {
+        if (this.lastIndex != this.index) {
+          if (this.index > this.lastIndex) {
+            if (this.index == (this.items.length - 1) && this.lastIndex == 0) {
+              $('.Slideshow').slick('prev')
+            } else {
+              $('.Slideshow').slick('next')
+            }
+          } else {
+            if (this.index == 0 && this.lastIndex == (this.items.length - 1)) {
+              $('.Slideshow').slick('next')
+            } else {
+              $('.Slideshow').slick('prev')
+            }
+          }
+
+          this.lastIndex = this.index
+        }
+      }
     }
   })
 
