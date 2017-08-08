@@ -36,8 +36,14 @@
   background-color: var(--black-trans-30);
 }
 
-.Slideshow__Slide:not(.slick-current) .Image__Link:after {
+.Slideshow__Slide .Image__Link:after {
   display: none;
+}
+
+@media (min-width: 481px) {
+  .Slideshow__Slide.slick-current .Image__Link:after {
+    display: block;
+  }
 }
 
 .Slideshow .slick-arrow {
