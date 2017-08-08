@@ -2,6 +2,7 @@
 global.$ = global.jQuery = require('jquery')
 var bootstrap = require('bootstrap')
 var slick = require('slick-carousel')
+var magnificPopup = require('magnific-popup')
 
 $(document).ready(function () {
   var $videoModal = $('.Video__Modal')
@@ -34,5 +35,24 @@ $(document).ready(function () {
     variableWidth: true,
     swipeToSlide: true,
     focusOnSelect: true
+  })
+
+  $('.Slideshow').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    mainClass: 'mfp-with-zoom mfp-fade',
+
+    zoom: {
+      enabled: true,
+      duration: 300,
+      easing: 'ease-in-out',
+      opener: function (openerElement) {
+        return openerElement.is('img') ? openerElement : openerElement.find('img')
+      }
+    },
+
+    gallery: {
+      enabled: true
+    }
   })
 })

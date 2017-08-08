@@ -15,6 +15,7 @@
 @import "bootstrap/dist/css/bootstrap.css";
 @import "bootstrap/dist/css/bootstrap-theme.css";
 @import "slick-carousel/slick/slick.css";
+@import "magnific-popup/dist/magnific-popup.css";
 @import "fonts.css";
 @import "basics.css";
 
@@ -28,3 +29,4 @@
 @import "accordeon.css";
 @import "video.css";
 @import "slideshow.css";
+@import "image.css";
