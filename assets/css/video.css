@@ -5,30 +5,37 @@
 
 .Video {
   position: relative;
+
   height: 461px;
+
   background-color: var(--dark-gray);
-  background-size: cover;
   background-position: 50%;
+  background-size: cover;
 }
 
 .Video__Overlay {
   position: absolute;
   top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
-  right: 0;
+
   background-color: var(--black-trans-30);
 }
 .Video__Link {
-  display: block;
   position: absolute;
-  width: 80px;
-  height: 80px;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+
+  display: block;
+
+  width: 80px;
+  height: 80px;
+
   cursor: pointer;
+  transform: translateX(-50%) translateY(-50%);
   text-indent: -10000px;
+
   border: 2px solid var(--white);
   border-radius: 50%;
 
@@ -36,13 +43,16 @@
 }
 
 .Video__Link:after {
-  content: "";
   position: absolute;
-  width: 0;
-  height: 0;
   top: 50%;
   left: 50%;
+
+  width: 0;
+  height: 0;
+
+  content: "";
   transform: translateX(-30%) translateY(-50%);
+
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
   border-left: 30px solid var(--white);

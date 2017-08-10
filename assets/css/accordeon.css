@@ -12,34 +12,42 @@
 
 .panel-default > .panel-heading {
   overflow: hidden;
+
   padding: 0;
-  background-image: none;
-  background-color: var(--white);
+
   border-color: var(--light-gray);
+  background-color: var(--white);
+  background-image: none;
 }
 
 .panel-headline {
   margin: 1.625rem 1.625rem 1.625rem 5.125rem;
+
   text-transform: uppercase;
   @apply --fs-hl-small;
 }
 .panel-group .panel-heading i {
   display: block;
   float: left;
+
   width: 3.75rem;
   height: 3.75rem;
+
+  transform: rotate(90deg);
+  text-align: center;
+
   color: var(--white);
   background-color: var(--dark-gray);
-  transform: rotate(90deg);
+
   font-size: 1.75rem;
   line-height: 3.75rem;
-  text-align: center;
 }
 
 .panel-group .panel-heading.collapsed i {
+  transform: rotate(0deg);
+
   color: var(--dark-gray);
   background-color: var(--superlight-gray);
-  transform: rotate(0deg);
 }
 
 .panel-body {

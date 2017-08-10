@@ -1,10 +1,12 @@
+
 /**
  * Progress bar style overrides
  */
 
 .progress {
-  margin-bottom: 2.875rem;
   height: 9px;
+  margin-bottom: 2.875rem;
+
   border-radius: 0;
   background-color: var(--superlight-gray);
   background-image: none;

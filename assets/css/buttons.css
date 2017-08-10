@@ -10,9 +10,8 @@
   text-transform: uppercase;
 
   color: var(--white);
-  background-color: var(--dark-red);
-
   border: 0.125rem solid var(--dark-red);
+  background-color: var(--dark-red);
 
   font-family: var(--font-hl);
   @apply --fs-button;
@@ -48,8 +47,8 @@
   text-decoration: none;
 
   color: var(--white);
-  background-color: var(--red);
   border-color: var(--red);
+  background-color: var(--red);
 }
 
 .Button--White,
@@ -61,6 +60,6 @@
 .Button--White:hover,
 .Button--White:active {
   color: var(--dark-gray);
-  background-color: var(--white);
   border-color: var(--white);
+  background-color: var(--white);
 }

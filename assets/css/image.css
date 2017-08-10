@@ -8,32 +8,36 @@
 }
 
 .Image__Link {
-  display: block;
   position: relative;
+
+  display: block;
 }
 
 .Image__Link:after {
-  content: "+";
   position: absolute;
-  width: 80px;
-  height: 80px;
   top: 50%;
   left: 50%;
-  background-color: var(--white);
-  border-radius: 50%;
+
+  width: 80px;
+  height: 80px;
+
+  content: "+";
   transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+
+  color: var(--black);
+  border-radius: 50%;
+  background-color: var(--white);
 
   font-family: var(--font-copy);
-  text-align: center;
   font-size: 3rem;
-  line-height: 5rem;
   font-weight: 100;
-  color: var(--black);
+  line-height: 5rem;
 
   @apply --animate;
 }
 
 .Image__Link:hover:after {
-  background-color: var(--dark-red);
   color: var(--white);
+  background-color: var(--dark-red);
 }
