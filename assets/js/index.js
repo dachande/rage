@@ -3,8 +3,14 @@ global.$ = global.jQuery = require('jquery')
 var bootstrap = require('bootstrap')
 var slick = require('slick-carousel')
 var magnificPopup = require('magnific-popup')
+var SmoothParallax = require('smooth-parallax')
 
 $(document).ready(function () {
+  /**
+   * Initialize Parallax effect
+   */
+  SmoothParallax.init()
+
   /**
    * Initialize slideshow(s) with slick carousel
    */
