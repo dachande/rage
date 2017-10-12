@@ -94,8 +94,28 @@
   background-size: contain;
 }
 
+.Headline--Icon-Circle {
+  padding-left: 5.75rem;
+}
+
+.Headline--Icon-Circle:before {
+  top: -2rem;
+  width: 4.375rem;
+  height: 4.375rem;
+  background-color: var(--dark-red);
+  background-position: center !important;
+  background-size: 2rem;
+  border: 5px solid var(--light-red);
+  border-radius: 50%;
+}
+
 .Headline--Icon.Headline--Icon-Lightbulb:before {
   background-image: url(/assets/img/lightbulb.svg);
+  background-position: -.375rem 0;
+}
+
+.Headline--Icon.Headline--Icon-Lightbulb-White:before {
+  background-image: url(/assets/img/lightbulb-white.svg);
   background-position: -.375rem 0;
 }
 
@@ -103,6 +123,30 @@
   background-image: url(/assets/img/monitor.svg);
 }
 
+.Headline--Icon.Headline--Icon-Monitor-White:before {
+  background-image: url(/assets/img/monitor-white.svg);
+}
+
 .Headline--Icon.Headline--Icon-Camera:before {
   background-image: url(/assets/img/camera.svg);
+}
+
+.Headline--Icon.Headline--Icon-Camera-White:before {
+  background-image: url(/assets/img/camera-white.svg);
+}
+
+.Headline--Icon.Headline--Icon-Flame:before {
+  background-image: url(/assets/img/flame.svg);
+}
+
+.Headline--Icon.Headline--Icon-Flame-White:before {
+  background-image: url(/assets/img/flame-white.svg);
+}
+
+.Headline--Icon.Headline--Icon-Heart:before {
+  background-image: url(/assets/img/heart.svg);
+}
+
+.Headline--Icon.Headline--Icon-Heart-White:before {
+  background-image: url(/assets/img/heart-white.svg);
 }
