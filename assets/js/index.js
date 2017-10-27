@@ -97,9 +97,9 @@ $(document).ready(function () {
   })
 
   /**
-   * Videos will open in a magnific popup layer
+   * Videos with Video__Link--Popup class will open in a magnific popup layer
    */
-  $('.Video__Link').magnificPopup({
+  $('.Video__Link--Popup').magnificPopup({
     type: 'iframe'
   })
 
