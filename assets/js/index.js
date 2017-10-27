@@ -28,6 +28,7 @@ $(document).ready(function () {
     type: 'image',
     mainClass: 'mfp-with-zoom',
 
+    // Enable zoom effect
     zoom: {
       enabled: true,
       duration: 300,
@@ -37,10 +38,13 @@ $(document).ready(function () {
       }
     },
 
+    // Enable gallery mode
     gallery: {
       enabled: true
     },
 
+    // These callbacks control the slick slider jumping forward or backward
+    // when the user jumps through the images in the gallery.
     callbacks: {
       beforeOpen: function () {
         this.lastIndex = this.index
