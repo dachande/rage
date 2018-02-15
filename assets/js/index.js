@@ -3,14 +3,8 @@ global.$ = global.jQuery = require('jquery')
 var bootstrap = require('bootstrap')
 var slick = require('slick-carousel')
 var magnificPopup = require('magnific-popup')
-var SmoothParallax = require('smooth-parallax')
 
 $(document).ready(function () {
-  /**
-   * Initialize Parallax effect
-   */
-  SmoothParallax.init()
-
   /**
    * Initialize slideshow(s) with slick carousel
    */
@@ -28,7 +22,7 @@ $(document).ready(function () {
    * Slideshow images will open in a magnific popup layer
    */
   $('.Slideshow').magnificPopup({
-    delegate: '.Slideshow__Slide:not(.slick-cloned) a',
+    delegate: '.slick-slide:not(.slick-cloned) .Slideshow__Slide a',
     type: 'image',
     mainClass: 'mfp-with-zoom',
 
