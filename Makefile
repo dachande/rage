@@ -7,6 +7,8 @@ build: node_modules
 watch: node_modules
 	@$(NPM) run watch
 
+serve: node_modules
+	@$(NPM) run serve
 node_modules: package.json
 	@$(NPM) install -qs
 
@@ -15,4 +17,3 @@ clean:
 
 dist-clean: clean
 	rm -rf node_modules
-

@@ -12,10 +12,12 @@
     "build": "gulp",
     "build:css": "gulp css",
     "build:js": "gulp js",
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "serve": "gulp serve"
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",
+    "browser-sync": "^2.23.6",
     "browserify": "^13.1.1",
     "cssnano": "^3.7.4",
     "gulp": "^3.9.1",
