@@ -7,7 +7,8 @@
 
   /* Colors */
   --black: #000000;
-  --black-trans-30: rgba(0, 0, 0, 0.3);
+  --black-trans-30: rgba(0, 0, 0, .3);
+  --black-trans-50: rgba(0, 0, 0, .5);
   --white: #ffffff;
   --dark-gray: #333333;
   --gray: #767676;

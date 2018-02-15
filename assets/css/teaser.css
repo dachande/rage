@@ -1,0 +1,29 @@
+/**
+ * Teasers
+ */
+
+.ImageTeaser {
+  position: relative;
+
+  background-color: var(--dark-gray);
+  background-position: 50%;
+  background-size: cover;
+}
+
+.ImageTeaser__Overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: var(--black-trans-50);
+}
+
+.ImageTeaser .Headline {
+  color: var(--white);
+}
+
+.ImageTeaser .Text {
+  color: var(--superlight-gray);
+}
