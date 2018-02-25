@@ -76,9 +76,9 @@ $(document).ready(function () {
   })
 
   /**
-   * Images with Image__Link--Popup class will open in magnific popup layer
+   * Images with js-image-popup class will open in magnific popup layer
    */
-  $('.Image__Link--Popup').magnificPopup({
+  $('.js-image-popup').magnificPopup({
     type: 'image',
     mainClass: 'mfp-with-zoom',
 
