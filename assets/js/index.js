@@ -98,4 +98,38 @@ $(document).ready(function () {
   $('.Video__Link').magnificPopup({
     type: 'iframe'
   })
+
+  /**
+   * Scroll-To Animation for elements with js-scroll class.
+   *
+   * Attributes:
+   * href / data-target: Id of the target element to scroll to
+   * data-scroll-speed: Anmiation duration
+   * data-easing: Easing function to use
+   */
+  $('.js-scroll').on('click', function () {
+    $element = $(this)
+    scrollTarget = ''
+    defaultScrollSpeed = 800
+    defaultEasing = 'easeOutQuart'
+
+    // Get target
+    if (typeof $element.attr('href') !== 'undefined') {
+      scrollTarget = $($element.attr('href'))
+    } else {
+      scrollTarget = $element.data('target')
+    }
+
+    // Set scroll speed and easing
+    scrollSpeed = (typeof $element.data('scroll-speed') !== 'undefined') ? $element.data('scroll-speed') : defaultScrollSpeed
+    easing = (typeof $element.data('easing') !== 'undefined') ? $element.data('easing') : defaultEasing
+
+    // If target is found, scroll to it
+    if (scrollTarget.length && $(scrollTarget).length) {
+      $scrollTarget = $(scrollTarget)
+      $('html, body').animate({
+        scrollTop: $scrollTarget.offset().top
+      }, scrollSpeed, easing)
+    }
+  })
 })
