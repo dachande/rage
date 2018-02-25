@@ -22,7 +22,8 @@ gulp.task('css', () => {
       browsers: browsers,
       warnForDuplicates: false
     }),
-    require('cssnano')()
+    require('cssnano')(),
+    require('autoprefixer')()
   ]
 
   return gulp
