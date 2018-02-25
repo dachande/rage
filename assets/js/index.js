@@ -1,8 +1,10 @@
 
 global.$ = global.jQuery = require('jquery')
+
 var bootstrap = require('bootstrap')
 var slick = require('slick-carousel')
 var magnificPopup = require('magnific-popup')
+var easing = require('jquery.easing')
 
 $(document).ready(function () {
   /**
