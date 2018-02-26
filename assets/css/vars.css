@@ -49,6 +49,12 @@
     letter-spacing: .1875rem;
   };
 
+  --fs-hl-big {
+    font-size: 3rem;
+    line-height: 1.5rem;
+    letter-spacing: .1875rem;
+  };
+
   --fs-hl-small {
     font-size: .875rem;
     line-height: .5rem;
@@ -58,6 +64,12 @@
   --fs-text {
     font-size: .875rem;
     line-height: 2rem;
+  };
+
+  --fs-text-big {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 300;
   };
 
   --fs-button {

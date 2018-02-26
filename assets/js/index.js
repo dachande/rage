@@ -132,4 +132,46 @@ $(document).ready(function () {
       }, scrollSpeed, easing)
     }
   })
+
+  /**
+   * Fire generic scroll event when window is scrolled
+   */
+  $(window).on('scroll', function () {
+    console.log('scroll')
+    initializeCounter()
+  })
 })
+
+initializeCounter = function () {
+  scrollPosition = $(window).scrollTop() + $(window).height()
+
+  $('.js-counter:not(.initialized)').each(function () {
+    $item = $(this)
+    itemPosition = $item.offset().top
+
+    if (scrollPosition > itemPosition) {
+      init = true
+      start = $item.data('start')
+      stop = $item.data('stop')
+      ed = $item.data('ed')
+      speed = $item.data('speed')
+      step = start != parseInt(start) || stop != parseInt(stop) ? parseFloat($item.data('step')) : parseInt($item.data('step'));
+      console.log([start,stop,ed,speed,step])
+      animateCounter(start, stop, speed, step, ed, $item)
+
+      if (init === true) {
+        $item.addClass('initialized')
+      }
+    }
+  })
+}
+
+animateCounter = function (start, stop, speed, step, ed, el) {
+  start = Math.min(stop, start + step)
+  el.text(start + ed)
+  if (start < stop) {
+    setTimeout(function () {
+      animateCounter(start, stop, speed, step, ed, el)
+    }, speed)
+  }
+}

@@ -1,0 +1,42 @@
+.Number__Count {
+  display: block;
+  position: relative;
+
+  margin: 0 0 3.625rem;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--dark-gray);
+
+  font-family: var(--font-hl);
+  @apply --fs-hl-big;
+}
+
+.Number__Count:after {
+  position: absolute;
+  top: 0;
+  bottom: -2.375rem;
+  left: 50%;
+
+  width: 3rem;
+
+  content: " ";
+  transform: translateX(-50%);
+
+  border-bottom: 0.125rem solid var(--dark-red);
+}
+
+.Number__Text {
+  display: block;
+
+  margin: 2rem 0;
+
+  text-align: center;
+
+  color: var(--dark-gray);
+
+  font-family: var(--font-copy);
+  @apply --fs-text-big;
+  font-style: italic;
+}
