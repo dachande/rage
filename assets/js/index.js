@@ -137,8 +137,8 @@ $(document).ready(function () {
    * Fire generic scroll event when window is scrolled
    */
   $(window).on('scroll', function () {
-    console.log('scroll')
     initializeCounter()
+    initializeProgress()
   })
 })
 
@@ -156,7 +156,6 @@ initializeCounter = function () {
       ed = $item.data('ed')
       speed = $item.data('speed')
       step = start != parseInt(start) || stop != parseInt(stop) ? parseFloat($item.data('step')) : parseInt($item.data('step'));
-      console.log([start,stop,ed,speed,step])
       animateCounter(start, stop, speed, step, ed, $item)
 
       if (init === true) {
@@ -169,9 +168,43 @@ initializeCounter = function () {
 animateCounter = function (start, stop, speed, step, ed, el) {
   start = Math.min(stop, start + step)
   el.text(start + ed)
+
   if (start < stop) {
     setTimeout(function () {
       animateCounter(start, stop, speed, step, ed, el)
     }, speed)
   }
+}
+
+initializeProgress = function () {
+  scrollPosition = $(window).scrollTop() + $(window).height()
+
+  $('[role="progressbar"]:not(.initialized)').each(function () {
+    $item = $(this)
+    itemPosition = $item.offset().top
+
+    if (scrollPosition > itemPosition) {
+      init = true
+      now = $item.data('valuenow')
+      min = $item.data('valuemin')
+      max = $item.data('valuemax')
+      speed = $item.data('speed')
+      animateProgress(now, min, max, speed, $item)
+
+      if (init === true) {
+        $item.addClass('initialized')
+      }
+    }
+  })
+}
+
+animateProgress = function (now, min, max, speed, el) {
+  startWidth = Math.round(min / max * 100)
+  endWidth = Math.round(now / max * 100)
+
+  el.animate(
+    {width: endWidth + '%'},
+    speed,
+    'swing'
+  )
 }
