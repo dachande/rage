@@ -39,5 +39,5 @@
 
 .Image__Link:hover:after {
   color: var(--white);
-  background-color: var(--dark-red);
+  background-color: var(--primary-dark);
 }

@@ -7,7 +7,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: var(--dark-gray);
+  color: var(--color-text-dark);
 
   font-family: var(--font-hl);
   @apply --fs-hl-big;
@@ -24,7 +24,7 @@
   content: " ";
   transform: translateX(-50%);
 
-  border-bottom: 0.125rem solid var(--dark-red);
+  border-bottom: 0.125rem solid var(--primary-dark);
 }
 
 .Number__Text {
@@ -34,7 +34,7 @@
 
   text-align: center;
 
-  color: var(--dark-gray);
+  color: var(--color-text-dark);
 
   font-family: var(--font-copy);
   @apply --fs-text-big;

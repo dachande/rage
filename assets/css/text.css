@@ -7,7 +7,7 @@
 
   text-align: center;
 
-  color: var(--dark-gray);
+  color: var(--color-text-dark);
 
   font-family: var(--font-copy);
   @apply --fs-text;

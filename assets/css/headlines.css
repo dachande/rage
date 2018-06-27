@@ -11,7 +11,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: var(--dark-gray);
+  color: var(--color-text-dark);
 
   font-family: var(--font-hl);
   @apply --fs-hl;
@@ -51,7 +51,7 @@
   content: " ";
   transform: translateX(-50%);
 
-  border-bottom: 0.125rem solid var(--dark-red);
+  border-bottom: 0.125rem solid var(--primary-dark);
 }
 
 .Headline--Left.Headline--Underline:after {
@@ -102,10 +102,10 @@
   top: -2rem;
   width: 4.375rem;
   height: 4.375rem;
-  background-color: var(--dark-red);
+  background-color: var(--primary-dark);
   background-position: center !important;
   background-size: 2rem;
-  border: 5px solid var(--light-red);
+  border: 5px solid var(--primary-superlight);
   border-radius: 50%;
 }
 

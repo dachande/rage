@@ -43,7 +43,7 @@
 
   text-transform: uppercase;
 
-  color: var(--white);
+  color: var(--color-headline-light);
 
   font-family: var(--font-copy);
 
@@ -58,5 +58,5 @@
 }
 
 .Header__Text.Text {
-  color: var(--white);
+  color: var(--color-text-light);
 }

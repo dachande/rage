@@ -9,9 +9,9 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  color: var(--white);
-  border: 0.125rem solid var(--dark-red);
-  background-color: var(--dark-red);
+  color: var(--color-text-light);
+  border: 0.125rem solid var(--primary-dark);
+  background-color: var(--primary-dark);
 
   font-family: var(--font-hl);
   @apply --fs-button;
@@ -46,9 +46,9 @@
 .Button:active {
   text-decoration: none;
 
-  color: var(--white);
-  border-color: var(--red);
-  background-color: var(--red);
+  color: var(--color-text-light);
+  border-color: var(--primary-light);
+  background-color: var(--primary-light);
 }
 
 .Button--White,
@@ -59,7 +59,7 @@
 
 .Button--White:hover,
 .Button--White:active {
-  color: var(--dark-gray);
+  color: var(--color-text-dark);
   border-color: var(--white);
   background-color: var(--white);
 }

@@ -41,8 +41,8 @@ input[type="checkbox"]:focus,
   outline: none;
 }
 
-.Block--gray {
-  background-color: var(--supersuperlight-gray);
+.Block--secondary {
+  background-color: var(--secondary-highlight);
 }
 
 .container {
@@ -59,7 +59,7 @@ input[type="checkbox"]:focus,
 
   transform: translateX(-50%);
 
-  border-bottom: 1px solid var(--superlight-gray);
+  border-bottom: 1px solid var(--secondary-superlight);
 }
 
 .col {

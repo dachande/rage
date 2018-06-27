@@ -15,7 +15,7 @@
 
   padding: 0;
 
-  border-color: var(--light-gray);
+  border-color: var(--secondary-light);
   background-color: var(--white);
   background-image: none;
 }
@@ -36,8 +36,8 @@
   transform: rotate(90deg);
   text-align: center;
 
-  color: var(--white);
-  background-color: var(--dark-gray);
+  color: var(--color-headline-light);
+  background-color: var(--secondary-dark);
 
   font-size: 1.75rem;
   line-height: 3.75rem;
@@ -46,8 +46,8 @@
 .panel-group .panel-heading.collapsed i {
   transform: rotate(0deg);
 
-  color: var(--dark-gray);
-  background-color: var(--superlight-gray);
+  color: var(--color-headline-dark);
+  background-color: var(--secondary-superlight);
 }
 
 .panel-body {
