@@ -16,7 +16,7 @@
       <div class="Header__Gradient"></div>
       <div class="container">
         <div class="row">
-          <div class="col col-md-12">
+          <div class="col">
             <h1 class="Header__Headline">We're<br />creative designers</h1>
             <p class="Header__Text Text Text--Left">
               <a href="###" class="Button">Get started</a>
@@ -30,7 +30,7 @@
     <main>
       <section class="container container-border">
         <div class="row">
-          <div class="col col-md-6">
+          <div class="col-md-6">
             <h2 class="Headline Headline--Left Headline--Underline">About us</h2>
             <p class="Text Text--Left">
               Lorem ipsum dolor sit amet kk, consectetur adipiscing elit. Vivamus a placerat risus. Donec laoreet erat a efficitur facilisis. Donec tristique enim ipsum, vel varius odio semper vel. Phasellus ut mauris mi. Sed porttitor consequat quam. Donec volutpat magna non facilisis hendrerit. Pellentesque commodo id magna sed malesuada.
@@ -41,16 +41,16 @@
             <a href="###" class="Button">Download now</a>
           </div>
 
-          <div class="col col-md-6">
-            <div class="panel-group" id="accordeon" role="tablist" aria-multiselectable="true">
+          <div class="col-md-6">
+            <div class="accordion" id="accordion">
               <!-- Panel -->
-              <div class="panel panel-default">
-                <div class="panel-heading" id="headingOne" role="button" data-toggle="collapse" data-parent="#accordeon" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  <i class="fa fa-angle-right"></i> <h3 class="panel-headline">Unique design</h3>
+              <div class="card">
+                <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <i class="fa fa-angle-right"></i> <h3 class="card-headline">Unique design</h3>
                 </div>
 
-                <div class="panel-collapse collapse in" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
-                  <div class="panel-body">
+                <div class="collapse show" id="collapseOne" data-parent="#accordion">
+                  <div class="card-body">
                     <p class="Text Text--Left">
                       Aenean et libero convallis, congue nisi et, maximus tellus. Morbi volutpat efficitur mauris, quis tincidunt leo. Aenean vel nunc in diam suscipit facilisis. Aenean sagittis ipsum et diam rutrum dignissim. Nulla gravida et arcu in rhoncus. Integer bibendum felis molestie, convallis nisl ac, blandit ante. Nunc fringilla facilisis vehicula.
                     </p>
@@ -60,13 +60,13 @@
               <!-- /Panel -->
 
               <!-- Panel -->
-              <div class="panel panel-default">
-                <div class="panel-heading collapsed" id="headingTwo" role="button" data-toggle="collapse" data-parent="#accordeon" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  <i class="fa fa-angle-right"></i> <h3 class="panel-headline">Experienced team</h3>
+              <div class="card">
+                <div class="card-header collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <i class="fa fa-angle-right"></i> <h3 class="card-headline">Experienced team</h3>
                 </div>
 
-                <div class="panel-collapse collapse" id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
-                  <div class="panel-body">
+                <div class="collapse" id="collapseTwo" data-parent="#accordion">
+                  <div class="card-body">
                     <p class="Text Text--Left">
                       Lorem ipsum dolor sit amet kk, consectetur adipiscing elit. Vivamus a placerat risus. Donec laoreet erat a efficitur facilisis. Donec tristique enim ipsum, vel varius odio semper vel. Phasellus ut mauris mi. Sed porttitor consequat quam. Donec volutpat magna non facilisis hendrerit. Pellentesque commodo id magna sed malesuada.
                     </p>
@@ -76,13 +76,13 @@
               <!-- /Panel -->
 
               <!-- Panel -->
-              <div class="panel panel-default">
-                <div class="panel-heading collapsed" id="headingThree" role="button" data-toggle="collapse" data-parent="#accordeon" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  <i class="fa fa-angle-right"></i> <h3 class="panel-headline">Great service</h3>
+              <div class="card">
+                <div class="card-header collapsed" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="fa fa-angle-right"></i> <h3 class="card-headline">Great service</h3>
                 </div>
 
-                <div class="panel-collapse collapse" id="collapseThree" role="tabpanel" aria-labelledby="headingThree">
-                  <div class="panel-body">
+                <div class="collapse" id="collapseThree" data-parent="#accordion">
+                  <div class="card-body">
                     <p class="Text Text--Left">
                       Nam rhoncus pretium risus, id semper ex fermentum quis. Nullam condimentum a felis ac cursus. In gravida eleifend posuere. Curabitur mollis aliquet placerat. Etiam ultricies id neque vitae varius. Nunc vitae enim ornare, faucibus sapien ac, gravida odio.
                     </p>
@@ -92,13 +92,13 @@
               <!-- /Panel -->
 
               <!-- Panel -->
-              <div class="panel panel-default">
-                <div class="panel-heading collapsed" id="headingFour" role="button" data-toggle="collapse" data-parent="#accordeon" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  <i class="fa fa-angle-right"></i> <h3 class="panel-headline">Free updates</h3>
+              <div class="card">
+                <div class="card-header collapsed" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <i class="fa fa-angle-right"></i> <h3 class="card-headline">Free updates</h3>
                 </div>
 
-                <div class="panel-collapse collapse" id="collapseFour" role="tabpanel" aria-labelledby="headingFour">
-                  <div class="panel-body">
+                <div class="collapse" id="collapseFour" data-parent="#accordion">
+                  <div class="card-body">
                     <p class="Text Text--Left">
                       Aenean eu dolor vestibulum, gravida orci eget, ultricies urna. Ut at magna mollis, fringilla tortor non, lacinia ipsum. Phasellus nibh ante, vulputate vel tellus sed, suscipit consequat orci.
                     </p>
@@ -113,21 +113,21 @@
 
       <section class="container">
         <div class="row">
-          <div class="col col-md-4">
+          <div class="col-md-4">
             <h2 class="Headline Headline--Left Headline--Small Headline--Underline">We're creative</h2>
             <p class="Text Text--Justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a placerat risus. Donec laoreet erat a efficitur facilisis. Donec tristique enim ipsum, vel varius odio semper vel. Phasellus ut mauris mi. Sed porttitor consequat quam. Donec volutpat magna non facilisis hendrerit. Pellentesque commodo id magna sed malesuada.
             </p>
           </div>
 
-          <div class="col col-md-4">
+          <div class="col-md-4">
             <h2 class="Headline Headline--Small Headline--Underline">We're friendly</h2>
             <p class="Text Text--Justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a placerat risus. Donec laoreet erat a efficitur facilisis. Donec tristique enim ipsum, vel varius odio semper vel. Phasellus ut mauris mi. Sed porttitor consequat quam. Donec volutpat magna non facilisis hendrerit. Pellentesque commodo id magna sed malesuada.
             </p>
           </div>
 
-          <div class="col col-md-4">
+          <div class="col-md-4">
             <h2 class="Headline Headline--Right Headline--Small Headline--Underline">We love minimalism</h2>
             <p class="Text Text--Justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a placerat risus. Donec laoreet erat a efficitur facilisis. Donec tristique enim ipsum, vel varius odio semper vel. Phasellus ut mauris mi. Sed porttitor consequat quam. Donec volutpat magna non facilisis hendrerit. Pellentesque commodo id magna sed malesuada.
@@ -149,7 +149,7 @@
 
       <section class="container">
         <div class="row">
-          <div class="col col-md-12">
+          <div class="col-md-12">
             <h2 class="Headline Headline--Underline">Featured work</h2>
             <p class="Text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla augue arcu, fringilla efficitur cursus ac, tincidunt et lacus. Nam lorem nibh, maximus a mollis sed, tempor id dui. Cras placerat ornare erat in vehicula. Phasellus tincidunt eleifend aliquam. Nullam maximus orci vel lectus iaculis, id interdum massa vulputate.
@@ -209,7 +209,7 @@
 
       <section class="container">
         <div class="row">
-          <div class="col col-md-12 col-collapse-bottom">
+          <div class="col col-collapse-bottom">
             <h2 class="Headline Headline--Underline">Our services</h2>
             <p class="Text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla augue arcu, fringilla efficitur cursus ac, tincidunt et lacus. Nam lorem nibh, maximus a mollis sed, tempor id dui. Cras placerat ornare erat in vehicula. Phasellus tincidunt eleifend aliquam. Nullam maximus orci vel lectus iaculis, id interdum massa vulputate.
@@ -218,21 +218,21 @@
         </div>
 
         <div class="row">
-          <div class="col col-md-4">
+          <div class="col-md-4">
             <h2 class="Headline Headline--Left Headline--Small Headline--Icon Headline--Icon-Circle Headline--Icon-Lightbulb-White">Branding</h2>
             <p class="Text Text--Justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a placerat risus. Donec laoreet erat a efficitur facilisis. Donec tristique enim ipsum, vel varius odio semper vel. Phasellus ut mauris mi. Sed porttitor consequat quam. Donec volutpat magna non facilisis hendrerit. Pellentesque commodo id magna sed malesuada.
             </p>
           </div>
 
-          <div class="col col-md-4">
+          <div class="col-md-4">
             <h2 class="Headline Headline--Left Headline--Small Headline--Icon Headline--Icon-Monitor Headline--Underline">Web Design</h2>
             <p class="Text Text--Justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a placerat risus. Donec laoreet erat a efficitur facilisis. Donec tristique enim ipsum, vel varius odio semper vel. Phasellus ut mauris mi. Sed porttitor consequat quam. Donec volutpat magna non facilisis hendrerit. Pellentesque commodo id magna sed malesuada.
             </p>
           </div>
 
-          <div class="col col-md-4">
+          <div class="col-md-4">
             <h2 class="Headline Headline--Left Headline--Small Headline--Icon Headline--Icon-Circle Headline--Icon-Camera-White">Photography</h2>
             <p class="Text Text--Justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a placerat risus. Donec laoreet erat a efficitur facilisis. Donec tristique enim ipsum, vel varius odio semper vel. Phasellus ut mauris mi. Sed porttitor consequat quam. Donec volutpat magna non facilisis hendrerit. Pellentesque commodo id magna sed malesuada.
@@ -256,7 +256,7 @@
               <div class="ImageTeaser__Overlay"></div>
               <div class="container">
                 <div class="row">
-                  <div class="col col-md-12">
+                  <div class="col">
                     <h2 class="Headline">Impressed? Let's work together</h2>
                     <p class="Text">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla augue arcu, fringilla efficitur cursus ac, tincidunt et lacus. Nam lorem nibh, maximus a mollis sed, tempor id dui. Cras placerat ornare erat in vehicula. Phasellus tincidunt eleifend aliquam. Nullam maximus orci vel lectus iaculis, id interdum massa vulputate.
@@ -272,7 +272,7 @@
       <div class="Block--secondary">
         <section class="container">
           <div class="row">
-            <div class="col col-md-12">
+            <div class="col">
               <h2 class="Headline Headline--Underline">Our portfolio</h2>
               <p class="Text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla augue arcu, fringilla efficitur cursus ac, tincidunt et lacus. Nam lorem nibh, maximus a mollis sed, tempor id dui. Cras placerat ornare erat in vehicula. Phasellus tincidunt eleifend aliquam. Nullam maximus orci vel lectus iaculis, id interdum massa vulputate.
@@ -290,14 +290,14 @@
 
       <section class="container container-border">
         <div class="row">
-          <div class="col col-md-6">
+          <div class="col-md-6">
             <h2 class="Headline Headline--Left Headline--Underline">Our skills</h2>
             <p class="Text Text--Left">
               Proin nulla arcu, bibendum quis vestibulum vel, fringilla non enim. Aliquam ornare ligula eu ullamcorper placerat. Proin eu lobortis velit. Vivamus hendrerit, ex eu vulputate malesuada, quam libero vehicula nunc, eget tempor est quam in lacus.
             </p>
           </div>
 
-          <div class="col col-md-6">
+          <div class="col-md-6">
             <h3 class="Headline Headline--Progress Headline--Left">Graphic Design</h3>
             <div class="progress">
               <div class="progress-bar" role="progressbar" data-valuenow="35" data-valuemin="0" data-valuemax="100" data-speed="1000"></div>
@@ -318,25 +318,25 @@
 
       <section class="container">
         <div class="row">
-          <div class="col col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6">
             <div class="Number">
               <span class="Number__Count js-counter" data-start="0" data-stop="1234" data-ed="0" data-step="3" data-speed="50"></span>
               <span class="Number__Text">Projects finished</span>
             </div>
           </div>
-          <div class="col col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6">
             <div class="Number">
               <span class="Number__Count js-counter" data-start="0" data-stop="3456" data-ed="0" data-step="3" data-speed="25"></span>
               <span class="Number__Text">Lines of code</span>
             </div>
           </div>
-          <div class="col col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6">
             <div class="Number">
               <span class="Number__Count js-counter" data-start="0" data-stop="123" data-ed="0" data-step="3" data-speed="100"></span>
               <span class="Number__Text">Cups of coffee</span>
             </div>
           </div>
-          <div class="col col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6">
             <div class="Number">
               <span class="Number__Count js-counter" data-start="0" data-stop="456" data-ed="0" data-step="4" data-speed="50"></span>
               <span class="Number__Text">Hours of tears</span>
