@@ -47,12 +47,12 @@ gulp.task('js', function() {
 });
 
 // default task to run
-gulp.task('default', ['js', 'css'])
+gulp.task('default', gulp.parallel('js', 'css'))
 
 // watching files
 gulp.task('watch', () => {
-  gulp.watch(assets + 'css/*.css', ['css'])
-  gulp.watch(assets + 'js/*.js', ['js'])
+  gulp.watch(assets + 'css/*.css', gulp.series('css'))
+  gulp.watch(assets + 'js/*.js', gulp.series('js'))
 })
 
 gulp.task('serve', () => {
@@ -60,7 +60,7 @@ gulp.task('serve', () => {
     server: '.'
   })
 
-  gulp.watch(assets + 'css/*.css', ['css'])
-  gulp.watch(assets + 'js/*.js', ['js'])
+  gulp.watch(assets + 'css/*.css', gulp.series('css'))
+  gulp.watch(assets + 'js/*.js', gulp.series('js'))
   gulp.watch('./*.html').on('change', browserSync.reload)
 })
