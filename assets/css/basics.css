@@ -49,6 +49,12 @@ input[type="checkbox"]:focus,
   position: relative;
 }
 
+.container-fluid {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .container-border:after {
   position: absolute;
   bottom: 0;
@@ -62,7 +68,8 @@ input[type="checkbox"]:focus,
   border-bottom: 1px solid var(--secondary-superlight);
 }
 
-.col {
+.col,
+*[class^="col-"] {
   margin-top: 6.5625rem;
   margin-bottom: 6.5625rem;
 }
